@@ -1,0 +1,98 @@
+.fadein {
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-duration: 2s;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease;
+    -moz-animation-fill-mode: both;
+    -o-animation-duration: 2s;
+    -o-animation-iteration-count: 1;
+    -o-animation-timing-function: ease;
+    -o-animation-fill-mode: both;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+}
+
+.delay1 {
+    -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+    animation-delay: 1s;
+}
+
+.loop {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-duration: 1s;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-duration: 1s;
+  -o-animation-iteration-count: infinite;
+  webkit-animation-duration: 1s;
+  webkit-animation-iteration-count: infinite;
+}
+
+#glCanvas {
+    -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+    animation-delay: 1s;
+    -webkit-animation-duration: 6s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+        -moz-animation-duration: 6s;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease;
+    -moz-animation-fill-mode: both;
+        -o-animation-duration: 6s;
+    -o-animation-iteration-count: 1;
+    -o-animation-timing-function: ease;
+    -o-animation-fill-mode: both;
+        animation-duration: 6s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+}
+
+
+        @-webkit-keyframes fadein {
+                0% {
+                        opacity: 0;
+                }
+                100% {
+                        opacity: 1;
+                }
+        }
+        @-moz-keyframes fadein {
+                0% {
+                        opacity: 0;
+                }
+                100% {
+                        opacity: 1;
+                }
+        }
+        @-o-keyframes fadein {
+                0% {
+                        opacity: 0;
+                }
+                100% {
+                        opacity: 1;
+                }
+        }
+        @keyframes fadein {
+                0% {
+                        opacity: 0;
+                }
+                100% {
+                        opacity: 1;
+                }
+        }
+
+.fadein {
+        -webkit-animation-name: fadein;
+        -moz-animation-name: fadein;
+        -o-animation-name: fadein;
+        animation-name: fadein;
+}
+
+#glCanvas { -webkit-animation-name: fadein; }

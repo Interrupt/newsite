@@ -1,10 +1,36 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="css/page.css" />
+    <link rel="stylesheet" type="text/css" href="css/animations.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"/></script>
     <script type="text/javascript" src="js/three.min.js"></script>
     <script type="text/javascript" src="http://modernizr.com/downloads/modernizr-latest.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
   </head>
   <body onLoad="start()">
+    <div id="main" class="fadein">
+      <div class="section intro">
+        <div class="header">
+          <h1 id="name">CHAD CUDDIGAN<span class="fadein loop">_</span></h1>
+          <h2>software engineer and game designer</h2>
+          <p>
+            <a href="#games">games</a>,
+            <a href="#projects">projects</a>,
+            <a href="#github">github</a>,
+            <a href="#twitter">twitter</a></p>
+        </div>
+      </div>
+      <div id="games" class="section games">
+        <div class="header">
+          <h2>I make games</h2>
+          <p><a href="http://www.delvergame.com">Delver</a></p>
+        </div>
+      </div>
+      <div id="projects" class="section projects">
+        <div class="header">
+          <h2>I build stuff</h2>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

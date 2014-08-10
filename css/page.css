@@ -1,2 +1,22 @@
-body { margin: 0px; padding: 0px; }
-#glCanvas { width: 100%; height: 100%; }
+body { margin: 0px; padding: 0px; font-family: 'Open Sans', sans-serif; font-weight: 300; background-color: #000; }
+#glCanvas { width: 100%; height: 100%; position: fixed; left: 0px; right: 0px; }
+#main {
+  color: #fff;
+  width: 100%;
+  margin: 1em 0 6em 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.content { text-align: center; }
+.header { text-align: center; font-size: 1.8em; }
+.section { margin-top: 300px; }
+.intro { margin-top: 230px; }
+
+h1 { letter-spacing: 6px; }
+h2 { font-weight: 300; }
+
+a { text-decoration: none; color: #00D6FF; }
