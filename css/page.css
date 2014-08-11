@@ -33,3 +33,9 @@ a:hover { color: #7BEAFF; }
 .game .date { color: #666; }
 .game .description { color: #aaa; padding-top: 6px; }
 
+@media (max-width: 850px) {
+  .section { font-size: 1.5em; }
+}
+@media (max-width: 650px) {
+  .section { font-size: 1.2em; }
+}
