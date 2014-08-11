@@ -43,7 +43,7 @@ function start() {
   // add the dust planes
   for(var i = 0; i < maxDustLayers; i++) {
     var dust = new THREE.Mesh( dustGeometry, dustMaterial );
-    dust.position.z = (i + 1) * (9 / maxDustLayers);
+    dust.position.z = (i + 1) * (8.2 / maxDustLayers);
     dust.position.x = Math.random() * 4;
     dust.position.y = Math.random() * 4;
     dust.rotation.z = Math.random() * 360;
