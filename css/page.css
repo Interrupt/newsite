@@ -3,7 +3,7 @@ body { margin: 0px; padding: 0px; font-family: 'Open Sans', sans-serif; font-wei
 #main {
   color: #fff;
   width: 100%;
-  margin: 1em 0 6em 0;
+  margin: 1em 0 2em 0;
   position: absolute;
   left: 0;
   right: 0;
@@ -11,12 +11,25 @@ body { margin: 0px; padding: 0px; font-family: 'Open Sans', sans-serif; font-wei
   z-index: 2;
 }
 
-.content { text-align: center; }
-.header { text-align: center; font-size: 1.8em; }
-.section { margin-top: 300px; }
-.intro { margin-top: 230px; }
+.header { margin: 240px 0px 300px 0px; }
+.center { text-align: center; }
+.left { text-align: center; }
+.section { width: 70%; margin: auto; padding: 0px 0px 20px 0px; font-size: 1.8em; }
+.footer { color: #777; }
 
-h1 { letter-spacing: 6px; }
-h2 { font-weight: 300; }
-
+h1 { letter-spacing: 6px; margin: 0px 0px; padding: 20px 0px; display: block; }
+h2 { font-weight: 300; margin: 0px 0px; padding: 20px 0px; display: block; }
+p { padding: 10px 0px; margin: 0px; }
 a { text-decoration: none; color: #00D6FF; }
+a:hover { color: #7BEAFF; }
+
+.intro h1 { padding: 0px 0px; }
+.intro h2 { padding: 10px 0px; }
+
+.gameicon { width: 900px; height: 296px; margin: auto; }
+.game .title { text-align: left; padding: 0px 0px 10px 0px; }
+.game .icon { width: 100%; }
+.game { padding: 14px 20px 20px 20px; background-color: #000; margin-bottom: 20px; }
+.game .date { color: #666; }
+.game .description { color: #aaa; padding-top: 6px; }
+
