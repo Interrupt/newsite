@@ -1,11 +1,10 @@
 var mouse = new THREE.Vector2(0, 0); 
 var mouseLerp = new THREE.Vector2(0, 0);
 var scrollPos = new THREE.Vector2(0, 0);
-
-var name = "CHAD CUDDIGAN";
-
+var scrollLerp = new THREE.Vector2(0, 0);
 var maxDustLayers = 3;
 
+// setup the background
 function start() {
   var time = 0;
   var scene = new THREE.Scene();
@@ -14,6 +13,7 @@ function start() {
 
   var clock = new THREE.Clock();
 
+  // setup webGL renderer
   var renderer = new THREE.WebGLRenderer();
   renderer.setSize( window.innerWidth, window.innerHeight );
   renderer.domElement.setAttribute( "id", "glCanvas" );
@@ -51,6 +51,9 @@ function start() {
     dusts[i] = dust;
   }
 
+  // cache the body dom element
+  var htmlBody = $("body");
+
   // update everything and render
   function render() {
     time = clock.getElapsedTime();
@@ -58,16 +61,14 @@ function start() {
     // comet movement
     comet.rotation.z += 0.0006;
 
-    scrollPos.x = mouse.x;
-    scrollPos.y = mouse.y;
-    scrollPos.y -= $("body").scrollTop() * 2;
+    scrollPos.y = htmlBody.scrollTop() * 0.015;
 
     // make the mouse lag a bit behind when it moves
-    mouseLerp.lerp(scrollPos, 0.05);
+    mouseLerp.lerp(mouse, 0.05);
 
     // camera position
     camera.position.x = Math.sin(time * 0.001) + mouseLerp.x * 0.001;
-    camera.position.y = Math.sin(time * 0.0013) + mouseLerp.y * 0.001;
+    camera.position.y = Math.sin(time * 0.0013) + (mouseLerp.y * 0.001) - htmlBody.scrollTop() * 0.015;
     camera.position.z = 10 + Math.sin(time * 0.05);
     camera.rotation.z = time * 0.001;
 
@@ -88,17 +89,6 @@ function start() {
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
   }, false);
-
-  function type(number) {
-    setTimeout(function() {
-      var n = name.substring(0, number);
-      n += "_";
-      $("#name").text(n).show();
-      if(number < name.length) type(number + 1);
-    }, 100);
-  }
-
-  //type(0);
 }
 
 document.addEventListener('mousemove', function(e) {

@@ -34,21 +34,21 @@
 }
 
 #glCanvas {
-    -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
-    animation-delay: 1s;
-    -webkit-animation-duration: 6s;
+    -webkit-animation-delay: 0.5s; /* Chrome, Safari, Opera */
+    animation-delay: 0.5s;
+    -webkit-animation-duration: 3s;
     -webkit-animation-iteration-count: 1;
     -webkit-animation-timing-function: ease;
     -webkit-animation-fill-mode: both;
-        -moz-animation-duration: 6s;
+        -moz-animation-duration: 3s;
     -moz-animation-iteration-count: 1;
     -moz-animation-timing-function: ease;
     -moz-animation-fill-mode: both;
-        -o-animation-duration: 6s;
+        -o-animation-duration: 3s;
     -o-animation-iteration-count: 1;
     -o-animation-timing-function: ease;
     -o-animation-fill-mode: both;
-        animation-duration: 6s;
+        animation-duration: 3s;
     animation-iteration-count: 1;
     animation-timing-function: ease;
     animation-fill-mode: both;
