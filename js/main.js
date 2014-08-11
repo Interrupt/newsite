@@ -4,6 +4,8 @@ var scrollPos = new THREE.Vector2(0, 0);
 
 var name = "CHAD CUDDIGAN";
 
+var maxDustLayers = 3;
+
 function start() {
   var time = 0;
   var scene = new THREE.Scene();
@@ -39,9 +41,9 @@ function start() {
   scene.add( comet );
 
   // add the dust planes
-  for(var i = 0; i < 3; i++) {
+  for(var i = 0; i < maxDustLayers; i++) {
     var dust = new THREE.Mesh( dustGeometry, dustMaterial );
-    dust.position.z = (i + 1) * 2.75;
+    dust.position.z = (i + 1) * (9 / maxDustLayers);
     dust.position.x = Math.random() * 4;
     dust.position.y = Math.random() * 4;
     dust.rotation.z = Math.random() * 360;
@@ -70,7 +72,7 @@ function start() {
     camera.rotation.z = time * 0.001;
 
     // move the dust planes
-    for(i = 0; i < 3; i++) {
+    for(i = 0; i < maxDustLayers; i++) {
       dusts[i].rotation.z += 0.0004 * i;
     }
 
