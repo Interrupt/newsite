@@ -31,7 +31,7 @@ a:hover { color: #7BEAFF; }
 .gameicon { width: 900px; height: 296px; margin: auto; }
 .game .title { text-align: left; padding: 0px 0px 10px 0px; }
 .game .icon { width: 100%; }
-.game { background-color: #000; margin-bottom: 20px; }
+.game { background-color: #000; margin-bottom: 20px; font-size: 0.8em; }
 .game .date { color: #666; }
 .game .description { color: #aaa; padding-top: 6px; }
 

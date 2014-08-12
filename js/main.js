@@ -69,7 +69,7 @@ function start() {
     // camera position
     camera.position.x = Math.sin(time * 0.001) + mouseLerp.x * 0.001;
     camera.position.y = Math.sin(time * 0.0013) + (mouseLerp.y * 0.001) - htmlBody.scrollTop() * 0.015;
-    camera.position.z = 10 + Math.sin(time * 0.05);
+    camera.position.z = 10 + Math.sin(time * 0.05) * 0.4;
 
     // move the dust planes
     for(i = 0; i < maxDustLayers; i++) {
