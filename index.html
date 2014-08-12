@@ -6,6 +6,8 @@
     <script type="text/javascript" src="js/three.min.js"></script>
     <script type="text/javascript" src="http://modernizr.com/downloads/modernizr-latest.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/bind-polyfill.min.js"></script>
+    <script type="text/javascript" src="js/smooth-scroll.min.js"></script>
   </head>
 
   <body onLoad="start()">
@@ -15,8 +17,8 @@
           <h1 id="name">CHAD CUDDIGAN<span class="fadein loop">_</span></h1>
           <h2>software engineer and game developer</h2>
           <p>
-            <a href="#games">games</a>,
-            <a href="#projects">projects</a>,
+            <a data-scroll data-options='{ "easing": "easeOutQuart" }' href="#games">games</a>,
+            <a data-scroll data-options='{ "easing": "easeOutQuart" }' href="#projects">projects</a>,
             <a href="https://github.com/interrupt">github</a>,
             <a href="https://twitter.com/cuddigan">twitter</a></p>
         </div>

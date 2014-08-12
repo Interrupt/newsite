@@ -94,6 +94,9 @@ function start() {
     window.location = $(this).find("a").attr("href");
     return;
   });
+
+  // init smooth scrolling
+  smoothScroll.init();
 }
 
 document.addEventListener('mousemove', function(e) {
