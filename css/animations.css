@@ -102,22 +102,6 @@
   -moz-transition: opacity 0.3s ease-in-out;
   -o-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
-  opacity: 0.8;
-}
-
-.game {
-  -webkit-transition: background-color 0.3s ease-in-out;
-  -moz-transition: background-color 0.3s ease-in-out;
-  -o-transition: background-color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
-  background-color: #000;
-}
-
-.game .inner:hover {
-  opacity: 1.0; 
-}
-
-.game:hover {
-  background-color: #111223;
+  opacity: 0.7;
 }
 
