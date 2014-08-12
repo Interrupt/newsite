@@ -108,3 +108,26 @@
 .game .inner:hover {
   opacity: 1.0;
 }
+
+.section {
+    -webkit-transition: margin 0.2s ease-in-out;
+    -moz-transition: margin 0.2s ease-in-out;
+    -o-transition: margin 0.2s ease-in-out;
+    transition: margin 0.2s ease-in-out;
+}
+
+/* Responsive transitions */
+.header {
+    -webkit-transition: margin 0.2s ease-in-out;
+    -moz-transition: margin 0.2s ease-in-out;
+    -o-transition: margin 0.2s ease-in-out;
+    transition: margin 0.2s ease-in-out;
+}
+
+.section {
+    -webkit-transition: font-size 0.2s ease-in-out;
+    -moz-transition: font-size 0.2s ease-in-out;
+    -o-transition: font-size 0.2s ease-in-out;
+    transition: font-size 0.2s ease-in-out;
+}
+

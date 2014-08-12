@@ -13,6 +13,10 @@ function start() {
 
   var clock = new THREE.Clock();
 
+  // center the starting mouse position
+  mouse = new THREE.Vector2(window.innerWidth / 2, window.innerHeight / 2);
+  mouseLerp = new THREE.Vector2(window.innerWidth / 2, window.innerHeight / 2);
+
   // setup webGL renderer
   var renderer = new THREE.WebGLRenderer();
   renderer.setSize( window.innerWidth, window.innerHeight );
@@ -67,9 +71,9 @@ function start() {
     mouseLerp.lerp(mouse, 0.05);
 
     // camera position
-    camera.position.x = Math.sin(time * 0.001) + mouseLerp.x * 0.001;
-    camera.position.y = Math.sin(time * 0.0013) + (mouseLerp.y * 0.001) - htmlBody.scrollTop() * 0.015;
-    camera.position.z = 10 + Math.sin(time * 0.05) * 0.4;
+    camera.position.x = Math.sin(time * 0.001) + (mouseLerp.x - window.innerWidth * 0.5) * 0.001;
+    camera.position.y = Math.sin(time * 0.0013) + ((mouseLerp.y - window.innerHeight * 0.5) * 0.001) - htmlBody.scrollTop() * 0.015;
+    camera.position.z = 10 + Math.sin(time * 0.05) * 0.2;
 
     // move the dust planes
     for(i = 0; i < maxDustLayers; i++) {
