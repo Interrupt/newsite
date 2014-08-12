@@ -34,6 +34,7 @@ a:hover { color: #7BEAFF; }
 .game { background-color: #000; margin-bottom: 20px; font-size: 0.8em; }
 .game .date { color: #666; }
 .game .description { color: #aaa; padding-top: 6px; }
+.game { cursor: pointer; }
 
 @media (max-width: 850px) {
   .section { font-size: 1.5em; }

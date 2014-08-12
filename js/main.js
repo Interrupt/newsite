@@ -88,6 +88,12 @@ function start() {
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
   }, false);
+
+  // setup the game card links
+  $(".game").click(function() {
+    window.location = $(this).find("a").attr("href");
+    return;
+  });
 }
 
 document.addEventListener('mousemove', function(e) {
