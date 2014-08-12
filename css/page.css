@@ -26,7 +26,7 @@ a { text-decoration: none; color: #00D6FF; }
 a:hover { color: #7BEAFF; }
 
 .intro h1 { padding: 0px 0px; }
-.intro h2 { padding: 10px 0px; }
+.intro h2 { padding: 10px 0px; margin: 0px; }
 
 .gameicon { width: 900px; height: 296px; margin: auto; }
 .game .title { text-align: left; padding: 0px 0px 10px 0px; }
