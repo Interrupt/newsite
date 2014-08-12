@@ -45,4 +45,5 @@ a:hover { color: #7BEAFF; }
   .section { width: 100%; font-size: 1.2em; }
   .header { margin: 100px 0px 100px 0px; }
   .bio { margin-bottom: 100px; }
+  .game .inner { opacity: 1.0 !important; }
 }
