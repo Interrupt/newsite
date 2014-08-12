@@ -97,7 +97,7 @@
 
 #glCanvas { -webkit-animation-name: fadein; }
 
-.game a img {
+.game .inner {
   -webkit-transition: opacity 0.1s ease-in-out;
   -moz-transition: opacity 0.1s ease-in-out;
   -o-transition: opacity 0.1s ease-in-out;
@@ -105,7 +105,7 @@
   opacity: 0.8;
 }
 
-.game a img:hover {
+.game .inner:hover {
   opacity: 1.0; 
 }
 

@@ -28,11 +28,11 @@ function start() {
   var dustMaterial = new THREE.MeshBasicMaterial( { map: dustTexture, transparent: true, depthTest: false, depthWrite: false, shading: THREE.None } );
 
   dustTexture.wrapS = dustTexture.wrapT = THREE.RepeatWrapping;
-  dustTexture.repeat.set( 8, 8 );
+  dustTexture.repeat.set( 15, 15 );
 
   // plane geometry
   var geometry = new THREE.PlaneGeometry( 15, 15 ); 
-  var dustGeometry = new THREE.PlaneGeometry( 50, 50 );
+  var dustGeometry = new THREE.PlaneGeometry( 70, 70 );
 
   // assemble the comet
   var comet = new THREE.Mesh( geometry, bgMaterial );
@@ -70,7 +70,6 @@ function start() {
     camera.position.x = Math.sin(time * 0.001) + mouseLerp.x * 0.001;
     camera.position.y = Math.sin(time * 0.0013) + (mouseLerp.y * 0.001) - htmlBody.scrollTop() * 0.015;
     camera.position.z = 10 + Math.sin(time * 0.05);
-    camera.rotation.z = time * 0.001;
 
     // move the dust planes
     for(i = 0; i < maxDustLayers; i++) {

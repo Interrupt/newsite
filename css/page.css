@@ -14,7 +14,9 @@ body { margin: 0px; padding: 0px; font-family: 'Open Sans', sans-serif; font-wei
 .header { margin: 240px 0px 300px 0px; }
 .center { text-align: center; }
 .left { text-align: center; }
-.section { width: 70%; margin: auto; padding: 0px 0px 20px 0px; font-size: 1.8em; }
+.section { width: 70%; margin: auto; font-size: 1.8em; }
+.section .inner { padding: 14px 20px 20px 20px; }
+.section h2 { margin-bottom: 20px; margin-top: 60px; }
 .footer { color: #777; }
 
 h1 { letter-spacing: 6px; margin: 0px 0px; padding: 20px 0px; display: block; }
@@ -29,7 +31,7 @@ a:hover { color: #7BEAFF; }
 .gameicon { width: 900px; height: 296px; margin: auto; }
 .game .title { text-align: left; padding: 0px 0px 10px 0px; }
 .game .icon { width: 100%; }
-.game { padding: 14px 20px 20px 20px; background-color: #000; margin-bottom: 20px; }
+.game { background-color: #000; margin-bottom: 20px; }
 .game .date { color: #666; }
 .game .description { color: #aaa; padding-top: 6px; }
 
