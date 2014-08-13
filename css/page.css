@@ -38,6 +38,10 @@ a:hover { color: #7BEAFF; }
 .game .description { color: #aaa; padding-top: 6px; }
 .game { cursor: pointer; }
 
+@media (min-width: 1200px) {
+  .section { font-size: 2.25vw; }
+}
+
 @media (max-width: 850px) {
   .section { font-size: 1.5em; }
 }
